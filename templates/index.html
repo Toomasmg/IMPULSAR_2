@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>listar usuarios</title>
+    </head>
+    <body>
+        <h1>Bienvenido a la pagina principal</h1>
+        {%set name = "juan carlos" %}
+        {%set numero_usuarios = users | length %}
+        <p>Numero de usuarios: {{numero_usuarios}}</p>
+        <h2>Usuarios:</h2>
+        <ul>
+            {%for user in users%}
+            <li>
+                {{user}}
+            </li>
+            {%endfor%}
+        </ul>
+        <p>{{name}}</p>
+    </body>
+</html>

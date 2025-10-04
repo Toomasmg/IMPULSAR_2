@@ -1,0 +1,7 @@
+{%macro lista_usuarios(lista_de_usuarios) %}
+    <ul>
+        {%for usuario, tipo in lista_de_usuarios %}
+            <li>{{"[admin]" if tipo == "admin" else "[usuario normal]"}} {{usuario}}</li>
+        {%endfor%}
+    </ul>
+{%endmacro%}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %} titulo defecto {% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    </head>
+    <body>
+        <header>
+            {% block h1 %} <h1>titulo defecto</h1> {% endblock %}
+        </header>
+
+        <main>
+            {% block contenido %} 
+            contenido defecto 
+            {% endblock %}
+        </main>
+
+        <footer>
+            {% block footer %} 
+            <p>@ 2025 IMPULSAR</p> 
+            {% endblock %}
+        </footer>
+    </body>
