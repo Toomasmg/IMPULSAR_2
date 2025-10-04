@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1>Ejmplos de entrada de datos</h1>
+        <form class = "form" method = "POST"> <!-- Entrada de datos por metodo post -->
+            <label for ="entry" class= "form_label">agregar usuario : </label>
+            <input type ="text" name= "contenido" id= "Entry">
+            <button type="submit" class="form_submit"> Enviar </button>
+        </form>
+        <h2>Usuario:</h2>
+        <ul>
+            {%for usuario in usuarios%}
+            <li>
+                {{usuario.nombre}}
+            </li>
+            {%endfor%}
+        </ul>
+    </body>
+</html>
+

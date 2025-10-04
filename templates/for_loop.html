@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>For Loop</title>
+    </head>
+
+    <body>
+        <h1>Equipos de Futbol</h1>
+        <h2>Lista de Equipos</h2>
+        <ul>
+            {% for team in teams %}
+                <li>
+                    {% if team=="Real Madrid"%}"gano la champions league"{% endif %}
+                </li>
+                    {% else %} "no gano la champions league"
+                    
+            {% endfor %}
+        </ul>
+    </body>
+</html> 
